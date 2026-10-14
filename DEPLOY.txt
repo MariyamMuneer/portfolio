@@ -1,0 +1,9 @@
+NETLIFY DEPLOYMENT
+Unzip this archive. Drag the extracted portfolio-redesign folder (containing index.html) into Netlify manual deployment. No build command or dependencies required. For a Git deployment, publish directory is . and build command is blank.
+
+CONTENT
+Case-study claims are based on the supplied portfolio. Pickwise is a concept with one early usability round, not a launched or revalidated product.
+Pickwise final notes and research synthesis have been incorporated; the corrected notes supply the 4-week duration and 3 experienced / 2 inexperienced participant split. Nourish Lab source images were absent from the uploaded ZIP, so the project is presented as a text overview.
+
+PORTRAIT
+The supplied portrait artwork was prepared using an image-editing tool to remove the embedded text. Review this edited portrait before publishing; it is not an untouched original photograph.
