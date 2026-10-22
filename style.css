@@ -397,10 +397,10 @@ summary:focus-visible {
 .about-portrait img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4/5;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
   object-position: center;
-  filter: grayscale(1);
+  filter: none;
 }
 figcaption {
   font-size: 11px;

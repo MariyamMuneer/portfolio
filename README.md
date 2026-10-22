@@ -12,17 +12,9 @@ python -m http.server 8080
 
 Open the local address shown by Python. The homepage is `index.html`. The featured case studies are `msn-academy.html`, `pickwise.html` and `move-light.html`.
 
-## Approved portrait — pending local asset
+## Approved portrait
 
-The new black-and-white portrait was supplied inline in chat, but no downloadable local file or attachment ID was exposed. The old generated portrait has been removed. A clearly labelled, non-photographic placeholder is used at:
-
-`assets/mariyam-professional-portrait.svg`
-
-To use the exact approved photo, copy the supplied original to:
-
-`assets/mariyam-professional-portrait.jpg`
-
-Then change the About image in `index.html` to that path and set its alt text to `Mariyam Muneer`. Use PNG instead if that is the original format. The stylesheet preserves the image proportions with a 4:5 editorial presentation and grayscale treatment. Do not generate or retouch the face. Recreate the deployment ZIP after replacing the asset.
+The exact approved photo from `Black.zip` is included at `assets/mariyam-professional-portrait.jpg`. The JPEG bytes are unchanged from the uploaded `Black.jpg`; no generation, retouching, recolouring or cropping was performed. The image uses its original dimensions and proportions. The old generated photo and temporary placeholder are removed.
 
 ## Netlify deployment after approval
 

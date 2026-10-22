@@ -38,4 +38,6 @@ PASS body text contrast ratios: 14.12:1 primary, 5.63:1 secondary, 8.15:1 and 10
 NOT RUN framework build/lint: no package manifest or build/lint scripts in the static project
 NOT VERIFIED external site availability: reference and live-site requests blocked by proxy
 NOT CREATED Netlify preview: authentication unavailable
-PENDING exact approved portrait local asset
+RESOLVED exact approved portrait supplied in Black.zip and included unchanged
+PASS approved portrait source bytes match Black.zip exactly
+PASS portrait loading, original aspect ratio, no image filters, no page overflow at 1440/768/390/320px

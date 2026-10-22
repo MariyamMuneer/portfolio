@@ -48,7 +48,7 @@ The About section briefly includes Biotechnology studies, design foundations thr
 
 ## Missing assets and access
 
-- The approved portrait is visible inline in chat but no accessible local attachment was exposed. No face generation or photo editing was performed for this redesign. A labelled SVG placeholder is used; the old generated image is removed. Supply the exact new file as `assets/mariyam-professional-portrait.jpg` or PNG and update the image path and alt text before publication.
+- The approved portrait was subsequently supplied in `Black.zip`. Its original JPEG is now included unchanged, with its original aspect ratio. The placeholder is removed.
 - Nourish Lab screenshot assets were missing from the original upload. The retained exploration is text-based and links to its original Figma file.
 - Netlify authentication/site configuration was unavailable. No online preview or production deployment was created.
 - External project demo, LinkedIn and Figma links were preserved; destination availability could not be verified through the restricted proxy.
@@ -56,4 +56,4 @@ The About section briefly includes Biotechnology studies, design foundations thr
 
 ## Review before publishing
 
-Review the missing portrait, screen compositions and current resume. A manually deployed production site remains unchanged until the user uploads the reviewed package. `netlify.toml` is preserved byte-for-byte. The user subsequently requested replacement of the older GitHub portfolio. The redesigned files and updated root ZIP are published to `main`; no Netlify production publish was attempted.
+Review the supplied portrait, screen compositions and current resume. A manually deployed production site remains unchanged until the user uploads the reviewed package. `netlify.toml` is preserved byte-for-byte. The user subsequently requested replacement of the older GitHub portfolio. The redesigned files and updated root ZIP are published to `main`; no Netlify production publish was attempted.

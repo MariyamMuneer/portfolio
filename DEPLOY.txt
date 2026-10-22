@@ -5,8 +5,8 @@ Upload the extracted folder using your existing Netlify manual deployment workfl
 Build command: blank. Publish directory: .
 No package install, GitHub connection or framework build is required.
 
-PORTRAIT PENDING
-The exact approved new portrait was visible inline in chat but was not provided as an accessible local asset. The old generated portrait is removed. Supply assets/mariyam-professional-portrait.jpg (or the original PNG), update the About image path and alt text in index.html, and recreate the ZIP. The current asset is a labelled SVG placeholder, not an invented face.
+APPROVED PORTRAIT INCLUDED
+The exact Black.jpg supplied in Black.zip is included as assets/mariyam-professional-portrait.jpg. Its original bytes, proportions and appearance are preserved. The placeholder has been removed.
 
 PREVIEW
 From the extracted directory, run: python -m http.server 8080
