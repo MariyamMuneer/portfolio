@@ -1,5 +1,451 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Move Light | Mariyam Muneer</title><meta name="description" content="A client wanted strength training and recovery sessions on alternate days that she could start any time, shaped around her body and level. I designed "><link rel="stylesheet" href="style.css"></head><body class="case"><a class="skip" href="#main">Skip to content</a>
-<div class="wrap"><header class="top"><a href="index.html">Mariyam Muneer</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><a href="assets/Mariyam_Muneer_UIUX_CV.pdf">CV</a></nav></header></div>
-<main id="main"><div class="wrap"><p class="eyebrow">Selected work / Case study</p><h1>Move Light — a guided workout experience</h1><p class="lede">A client wanted strength training and recovery sessions on alternate days that she could start any time, shaped around her body and level. I designed an experience that does the counting for her so she can focus on moving.</p><dl class="facts"><div><dt>Role</dt><dd>UX designer and product owner for a freelance client</dd></div><div><dt>Build</dt><dd>AI-assisted: I directed Claude and Codex with prompts and iterated; AI-generated implementation</dd></div><div><dt>Tools</dt><dd>Claude, Codex, Netlify</dd></div><div><dt>Status</dt><dd>Live. The client is happy for it to be shown.</dd></div></dl><nav class="case-nav" aria-label="Case study sections"><a href="#section-1">Starting with her</a><a href="#section-2">Key decisions</a><a href="#section-3">How I built it</a><a href="#section-4">Reflection & next steps</a></nav><div class="hero-media" style="background:#000"><video controls preload="metadata" playsinline poster="assets/vid/movelight.jpg" src="assets/vid/movelight.mp4"></video></div><div class="cs" id="section-1"><h2>Starting with her</h2><div class="body"><p>I began with a detailed conversation about her goals, her current level and what she needed to avoid. That shaped four rules I held to throughout:</p><ul><li>Calm over stimulating: no clutter, no streaks, no loud colours.</li><li>The app counts, times and speaks, so she never has to look at a watch.</li><li>Forgiving of pace: a missed count should never cause panic.</li><li>Nothing extra: every screen has one clear next step.</li></ul></div></div><div class="cs" id="section-2"><h2>Key decisions</h2><div class="body"><ul><li><b>&ldquo;Press play. Just follow along.&rdquo;</b> The timer, rep count, rests and next exercise are handled automatically.</li><li><b>Slow, three-second rep counting</b> with +/&minus; buttons, so if she falls behind she can correct the count without stopping.</li><li><b>Settings for voice prompts, rep counting and sound cues,</b> each on or off, so she controls how much the app speaks.</li><li><b>Short form demos inside the app,</b> so she does not leave to search for videos.</li><li><b>A visible plan:</b> &ldquo;Step 7 of 68, about 58&ndash;62 min&rdquo; and a Today&rsquo;s flow list so she always knows where she is.</li><li><b>A plain safety rule on the home screen,</b> and gentle wording such as &ldquo;Tap if moving at your own pace&rdquo;.</li></ul></div><div class="figs g2"><figure><img src="assets/move/s5.webp" alt="Home screen with two sessions and a safety rule" loading="lazy"><figcaption>Home: two sessions, one clear action each.</figcaption></figure><figure><img src="assets/move/s3.webp" alt="Start screen with Today&#x27;s flow list" loading="lazy"><figcaption>Start: the full plan is visible before she begins.</figcaption></figure><figure><img src="assets/move/s2.webp" alt="Mid-workout screen with progress ring and rep adjustment" loading="lazy"><figcaption>During a set: progress ring, rep count and +/&minus; adjustment.</figcaption></figure><figure><img src="assets/move/s1.webp" alt="Recovery flow step with demo link" loading="lazy"><figcaption>Recovery flow, with a short demo one tap away.</figcaption></figure><figure><img src="assets/move/s4.webp" alt="Workout settings with three toggles" loading="lazy"><figcaption>Settings: voice, auto-count and sound cues.</figcaption></figure></div></div><div class="cs" id="section-3"><h2>How I built it</h2><div class="body"><p>I wrote the brief, the screen behaviours and the copy, then used Claude and Codex through repeated prompts until the pacing, wording and controls felt right, and deployed it on Netlify. The design decisions are mine, and The implementation used AI-generated code.</p></div></div><div class="cs" id="section-4"><h2>Reflection & next steps</h2><div class="body"><ul><li>Add a clear &ldquo;not medical advice, follow your clinician&rsquo;s guidance&rdquo; note.</li><li>Add a simple history of completed sessions, only if it stays calm.</li><li>Check text size and contrast against accessibility guidelines.</li><li>Review it with her after a few weeks and write down what she changes or ignores.</li></ul></div></div></div><div class="wrap cta"><a class="btn" href="https://shameensworkout.netlify.app/" rel="noopener">See the live app</a></div><div class="wrap"><div class="pager"><a href="msn-academy.html">&larr; MSN Academy LMS</a><a href="pickwise.html">Pickwise &rarr;</a></div></div></main>
-<section id="contact"><div class="wrap contact-block"><p class="eyebrow">Get in touch</p><h2>Let’s work together.</h2><p>Open to junior UI/UX roles in Lahore and remote opportunities.</p><a href="mailto:termezimariyam@gmail.com">termezimariyam@gmail.com &#8594;</a></div></section><footer><div class="wrap footer-line"><span>© 2026 Mariyam Muneer · UI/UX Designer</span><div><a href="https://www.linkedin.com/in/mariyam-muneer-9874321bb" rel="noopener">LinkedIn &#8594;</a><a href="assets/Mariyam_Muneer_UIUX_CV.pdf" download>Download CV &#8595;</a></div></div></footer></body></html>
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Move Light — Client App Case Study | Mariyam Muneer</title>
+    <meta
+      name="description"
+      content="A guided workout application designed for one client, with clear interaction decisions and an AI-assisted implementation."
+    />
+    <meta name="theme-color" content="#f5f4f0" />
+    <meta
+      property="og:title"
+      content="Move Light — Client App Case Study | Mariyam Muneer"
+    />
+    <meta
+      property="og:description"
+      content="A guided workout application designed for one client, with clear interaction decisions and an AI-assisted implementation."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="index.html" aria-label="Mariyam Muneer — home"
+          >Mariyam Muneer<span>UI/UX & product design</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="index.html#work">Work</a><a href="index.html#about">About</a
+          ><a href="assets/Mariyam_Muneer_UIUX_CV.pdf" download
+            >Resume <span aria-hidden="true">↓</span></a
+          ><a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="shell">
+        <div class="case-intro">
+          <a class="back-link" href="index.html#work">← Selected work</a>
+          <p class="eyebrow">03 / Freelance · Real-client application</p>
+          <h1>A workout guide<br />that sets the pace.</h1>
+          <p class="case-deck">
+            A low-stimulation app for one client to follow strength and recovery
+            sessions, with guided timing, rep counts and rest periods.
+          </p>
+          <dl class="facts">
+            <div>
+              <dt>My role</dt>
+              <dd>UX and interaction design</dd>
+            </div>
+            <div>
+              <dt>Context</dt>
+              <dd>Freelance client project</dd>
+            </div>
+            <div>
+              <dt>Implementation</dt>
+              <dd>AI-assisted build<br />with Claude and Codex</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>Deployed on Netlify</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="case-cover movement">
+          <div class="preview-inner">
+            <img
+              src="assets/move/s3.webp"
+              alt="Move Light guided exercise screen"
+              class="primary-screen"
+              loading="eager"
+              decoding="async"
+            /><img
+              src="assets/move/s5.webp"
+              alt="Move Light recovery session"
+              class="secondary-screen"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <p>Client application / Guided strength + recovery</p>
+        </div>
+      </div>
+      <div class="story-nav">
+        <nav class="shell" aria-label="Case study sections">
+          <a href="#overview">Overview</a
+          ><a href="#contribution">My contribution</a
+          ><a href="#decisions">Design decisions</a
+          ><a href="#outcome">Outcome</a>
+        </nav>
+      </div>
+      <div class="shell story">
+        <section class="story-section" id="overview">
+          <div class="section-title">
+            <span class="eyebrow">01</span>
+            <h2>Less to manage.<br />More room to move.</h2>
+          </div>
+          <div class="story-copy">
+            <p class="lead">
+              My client wanted to start a session when it suited her, without
+              keeping track of every timer and repetition.
+            </p>
+            <p>
+              She needed alternating strength and recovery sessions tailored to
+              her level. A detailed conversation about her goals and constraints
+              informed the brief: calm screens, automatic guidance and room to
+              move at her own pace.
+            </p>
+            <p>This was a single-client project, not a broader user study.</p>
+          </div>
+        </section>
+        <section class="story-section" id="contribution">
+          <div class="section-title">
+            <span class="eyebrow">02</span>
+            <h2>Design direction.<br />AI-assisted implementation.</h2>
+          </div>
+          <div class="story-copy">
+            <p>
+              I defined the brief, flows, screen behaviour and interface copy. I
+              used Claude and Codex to generate the implementation, then
+              directed revisions to pacing, controls and wording before
+              deploying it on Netlify.
+            </p>
+            <p>
+              The design decisions and review were my contribution. The
+              application code was AI-generated; I am not presenting it as
+              hand-coded frontend work.
+            </p>
+          </div>
+        </section>
+        <section class="story-section" id="decisions">
+          <div class="section-title">
+            <span class="eyebrow">03</span>
+            <h2>Guidance,<br />without pressure.</h2>
+          </div>
+          <div class="story-copy">
+            <ol class="decision-list">
+              <li>
+                <h3>Keep the session moving.</h3>
+                <p>
+                  Automatic rep counting, timers, rests and next-exercise
+                  prompts reduce the need to check a separate clock.
+                </p>
+              </li>
+              <li>
+                <h3>Make pace adjustable.</h3>
+                <p>
+                  Slow counting and +/− controls let the client correct a rep
+                  count without restarting the exercise.
+                </p>
+              </li>
+              <li>
+                <h3>Let the client choose the cues.</h3>
+                <p>
+                  Voice, rep counting and sounds can be switched on or off
+                  independently.
+                </p>
+              </li>
+              <li>
+                <h3>Make the plan visible.</h3>
+                <p>
+                  A session overview, step progress and short form
+                  demonstrations help explain what comes next.
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div class="image-grid">
+            <figure class="">
+              <a
+                class="zoom-image"
+                href="assets/move/s3.webp"
+                data-zoom
+                aria-label="Expand image: Session plan before starting a workout"
+                ><img
+                  src="assets/move/s3.webp"
+                  alt="Session plan before starting a workout"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /><span class="image-hint" aria-hidden="true"
+                  >View full image
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    /></svg></span
+              ></a>
+              <figcaption>
+                Before starting · A clear session overview.
+              </figcaption>
+            </figure>
+            <figure class="">
+              <a
+                class="zoom-image"
+                href="assets/move/s4.webp"
+                data-zoom
+                aria-label="Expand image: Active exercise with rep count and adjustment controls"
+                ><img
+                  src="assets/move/s4.webp"
+                  alt="Active exercise with rep count and adjustment controls"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /><span class="image-hint" aria-hidden="true"
+                  >View full image
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    /></svg></span
+              ></a>
+              <figcaption>
+                During a set · Count and pace controls stay accessible.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="image-grid">
+            <figure class="">
+              <a
+                class="zoom-image"
+                href="assets/move/s5.webp"
+                data-zoom
+                aria-label="Expand image: Recovery session interface"
+                ><img
+                  src="assets/move/s5.webp"
+                  alt="Recovery session interface"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /><span class="image-hint" aria-hidden="true"
+                  >View full image
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    /></svg></span
+              ></a>
+              <figcaption>
+                Recovery · Exercise guidance stays within the app.
+              </figcaption>
+            </figure>
+            <figure class="">
+              <a
+                class="zoom-image"
+                href="assets/move/s2.webp"
+                data-zoom
+                aria-label="Expand image: Voice and counting settings"
+                ><img
+                  src="assets/move/s2.webp"
+                  alt="Voice and counting settings"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /><span class="image-hint" aria-hidden="true"
+                  >View full image
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    /></svg></span
+              ></a>
+              <figcaption>
+                Settings · The client chooses how much guidance to receive.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="story-section" id="outcome">
+          <div class="section-title">
+            <span class="eyebrow">04</span>
+            <h2>Built for one person.<br />Ready to learn from use.</h2>
+          </div>
+          <div class="story-copy">
+            <p>
+              The app was deployed, and the client agreed for it to be shown in
+              my portfolio. The recording below demonstrates the guided
+              experience; no longer-term usage metrics or follow-up study are
+              available.
+            </p>
+            <p>
+              Next I would review how the client uses it over time, check text
+              size and contrast, and add clearer guidance to follow a
+              clinician’s advice. A session history would only be useful if she
+              needs it.
+            </p>
+            <p class="reflection">
+              The project reinforced a simple lesson: for a focused tool,
+              choosing what to leave out can be as useful as adding another
+              feature.
+            </p>
+            <a
+              class="text-link"
+              href="https://shameensworkout.netlify.app/"
+              rel="noopener noreferrer"
+              >Open the client app
+              <svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                /></svg
+            ></a>
+          </div>
+          <figure class="video-figure">
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="assets/vid/movelight.jpg"
+              aria-label="Move Light guided workout demonstration"
+            >
+              <source src="assets/vid/movelight.mp4" type="video/mp4" />
+              Your browser does not support this video.
+              <a href="assets/vid/movelight.mp4">Download recording</a>.
+            </video>
+            <figcaption>
+              Move Light guided workout demonstration · Silent screen recording
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+      <aside class="next-project">
+        <div class="shell">
+          <p class="eyebrow">01 / Next project</p>
+          <a href="msn-academy.html"
+            ><h2>MSN Academy</h2>
+            <span aria-hidden="true"
+              ><svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                /></svg></span
+          ></a>
+          <p>A website and student learning platform, designed with a team.</p>
+        </div>
+      </aside>
+    </main>
+    <footer id="contact" class="site-footer">
+      <div class="shell">
+        <div class="footer-top">
+          <p class="eyebrow">Have a role or project in mind?</p>
+          <h2>
+            Let’s start a<br /><a href="mailto:termezimariyam@gmail.com"
+              >conversation.
+              <span aria-hidden="true"
+                ><svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M5 19 19 5M5 5h14v14"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  /></svg></span
+            ></a>
+          </h2>
+          <p class="footer-note">
+            Open to junior UI/UX and product design opportunities.<br />Based in
+            Lahore. Open to remote work.
+          </p>
+        </div>
+        <div class="footer-bottom">
+          <a href="mailto:termezimariyam@gmail.com"
+            >Email
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.3"
+              /></svg></a
+          ><a
+            href="https://www.linkedin.com/in/mariyam-muneer-9874321bb"
+            rel="noopener noreferrer"
+            >LinkedIn
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.3"
+              /></svg></a
+          ><a href="assets/Mariyam_Muneer_UIUX_CV.pdf" download>Resume ↓</a
+          ><span class="copyright">© 2026 Mariyam Muneer</span
+          ><a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+    <dialog class="image-dialog" aria-label="Expanded project image">
+      <button type="button" class="dialog-close">
+        Close <span aria-hidden="true">×</span></button
+      ><img alt="" />
+      <p></p>
+    </dialog>
+    <script src="site.js" defer></script>
+  </body>
+</html>

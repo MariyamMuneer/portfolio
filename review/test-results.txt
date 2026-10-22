@@ -1,0 +1,41 @@
+PASS local links, assets, anchors, alt text, one h1: index.html
+PASS local links, assets, anchors, alt text, one h1: move-light.html
+PASS local links, assets, anchors, alt text, one h1: nourish-lab.html
+PASS local links, assets, anchors, alt text, one h1: msn-academy.html
+PASS local links, assets, anchors, alt text, one h1: pickwise.html
+PASS local links, assets, anchors, alt text, one h1: velora.html
+PASS 1440px: index.html; no overflow; images and media load
+PASS 1440px: move-light.html; no overflow; images and media load
+PASS 1440px: nourish-lab.html; no overflow; images and media load
+PASS 1440px: msn-academy.html; no overflow; images and media load
+PASS 1440px: pickwise.html; no overflow; images and media load
+PASS 1440px: velora.html; no overflow; images and media load
+PASS 768px: index.html; no overflow; images and media load
+PASS 768px: move-light.html; no overflow; images and media load
+PASS 768px: nourish-lab.html; no overflow; images and media load
+PASS 768px: msn-academy.html; no overflow; images and media load
+PASS 768px: pickwise.html; no overflow; images and media load
+PASS 768px: velora.html; no overflow; images and media load
+PASS 390px: index.html; no overflow; images and media load
+PASS 390px: move-light.html; no overflow; images and media load
+PASS 390px: nourish-lab.html; no overflow; images and media load
+PASS 390px: msn-academy.html; no overflow; images and media load
+PASS 390px: pickwise.html; no overflow; images and media load
+PASS 390px: velora.html; no overflow; images and media load
+PASS 320px: index.html; no overflow; images and media load
+PASS 320px: move-light.html; no overflow; images and media load
+PASS 320px: nourish-lab.html; no overflow; images and media load
+PASS 320px: msn-academy.html; no overflow; images and media load
+PASS 320px: pickwise.html; no overflow; images and media load
+PASS 320px: velora.html; no overflow; images and media load
+PASS keyboard skip link, image dialog Enter/Escape/Close/focus restoration, project order and section navigation
+PASS no-JavaScript content, native details and standard image links
+PASS reduced-motion preference disables scroll animation and reveal hiding
+PASS no browser JavaScript errors or local HTTP failures
+PASS node --check site.js
+PASS git diff --check
+PASS body text contrast ratios: 14.12:1 primary, 5.63:1 secondary, 8.15:1 and 10.13:1 footer text
+NOT RUN framework build/lint: no package manifest or build/lint scripts in the static project
+NOT VERIFIED external site availability: reference and live-site requests blocked by proxy
+NOT CREATED Netlify preview: authentication unavailable
+PENDING exact approved portrait local asset
