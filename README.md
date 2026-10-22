@@ -33,7 +33,7 @@ The existing `netlify.toml` is unchanged: publish directory `.`; no build comman
 3. To review online without altering production, create a separate manual Netlify site or use an authenticated draft deploy (`netlify deploy --dir <folder> --site <existing-site-id>` without `--prod`). Netlify access is required; no credentials were available during this redesign.
 4. After approval, upload the extracted folder through the existing site's manual deploy workflow, or run a production deploy using your authenticated Netlify setup.
 
-No GitHub connection is needed. This work is on local branch `redesign/editorial-portfolio`; it has not been pushed, merged or deployed to production.
+No GitHub connection is needed. The redesign was developed on `redesign/editorial-portfolio` and replaces the earlier files on the GitHub `main` branch at the user’s request. No Netlify deployment was performed.
 
 ## Content and links
 

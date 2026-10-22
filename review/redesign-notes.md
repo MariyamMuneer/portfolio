@@ -56,4 +56,4 @@ The About section briefly includes Biotechnology studies, design foundations thr
 
 ## Review before publishing
 
-Review the missing portrait, screen compositions and current resume. A manually deployed production site remains unchanged until the user uploads the reviewed package. `netlify.toml` is preserved byte-for-byte. No branch push, merge or production publish has been attempted.
+Review the missing portrait, screen compositions and current resume. A manually deployed production site remains unchanged until the user uploads the reviewed package. `netlify.toml` is preserved byte-for-byte. The user subsequently requested replacement of the older GitHub portfolio. The redesigned files and updated root ZIP are published to `main`; no Netlify production publish was attempted.
