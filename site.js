@@ -274,6 +274,122 @@
       });
     });
 
+  // Restrained desktop-only surface response, scheduled once per animation frame.
+  const finePointer = matchMedia("(hover: hover) and (pointer: fine)");
+  document.querySelectorAll(".creative-preview").forEach((card) => {
+    let frame = null;
+    let bounds = null;
+    let point = null;
+    const reset = () => {
+      if (frame) cancelAnimationFrame(frame);
+      frame = null;
+      bounds = null;
+      point = null;
+      card.style.removeProperty("--tilt-x");
+      card.style.removeProperty("--tilt-y");
+    };
+    card.addEventListener("pointerenter", () => {
+      bounds = card.getBoundingClientRect();
+    });
+    card.addEventListener("pointermove", (event) => {
+      if (
+        !finePointer.matches ||
+        motionPreference.matches ||
+        event.pointerType === "touch"
+      )
+        return;
+      bounds ||= card.getBoundingClientRect();
+      point = { x: event.clientX, y: event.clientY };
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        const x = Math.max(
+          -0.5,
+          Math.min(0.5, (point.x - bounds.left) / bounds.width - 0.5),
+        );
+        const y = Math.max(
+          -0.5,
+          Math.min(0.5, (point.y - bounds.top) / bounds.height - 0.5),
+        );
+        card.style.setProperty("--tilt-x", `${-y * 2}deg`);
+        card.style.setProperty("--tilt-y", `${x * 2}deg`);
+        frame = null;
+      });
+    });
+    card.addEventListener("pointerleave", reset);
+    card.addEventListener("blur", reset);
+    motionPreference.addEventListener("change", reset);
+    finePointer.addEventListener("change", reset);
+  });
+
+  // A small reading-position cue; never captures scrolling or keyboard focus.
+  const progress = document.createElement("div");
+  progress.className = "reading-progress";
+  progress.setAttribute("aria-hidden", "true");
+  document.body.prepend(progress);
+  let progressFrame = null;
+  function updatePosition() {
+    progressFrame = null;
+    const range = document.documentElement.scrollHeight - innerHeight;
+    const value = range > 0 ? Math.max(0, Math.min(1, scrollY / range)) : 0;
+    progress.style.transform = `scaleX(${value})`;
+  }
+  addEventListener(
+    "scroll",
+    () => {
+      if (!progressFrame) progressFrame = requestAnimationFrame(updatePosition);
+    },
+    { passive: true },
+  );
+  addEventListener("resize", updatePosition);
+  updatePosition();
+
+  // Keep Work/About navigation oriented to the section currently in view.
+  if ("IntersectionObserver" in window && document.querySelector(".home")) {
+    const sections = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          document
+            .querySelectorAll(".desktop-nav a, .mobile-menu nav a")
+            .forEach((link) => {
+              if (link.hash === `#${entry.target.id}`)
+                link.setAttribute("aria-current", "location");
+              else link.removeAttribute("aria-current");
+            });
+        });
+      },
+      { rootMargin: "-15% 0px -65% 0px" },
+    );
+    document
+      .querySelectorAll(".creative-hero, #work, #about, #contact")
+      .forEach((el) => sections.observe(el));
+  }
+
+  // A useful contact action, with visible and screen-reader feedback.
+  document.querySelectorAll("[data-copy-email]").forEach((button) => {
+    if (!navigator.clipboard?.writeText) return;
+    button.hidden = false;
+    const status = button.parentElement.querySelector(".copy-status");
+    let resetTimer;
+    button.addEventListener("click", async () => {
+      clearTimeout(resetTimer);
+      try {
+        await navigator.clipboard.writeText(button.dataset.copyEmail);
+        status.textContent = "Email copied";
+        motion(
+          button,
+          [{ transform: "scale(.95)" }, { transform: "scale(1)" }],
+          { duration: 280 },
+        );
+      } catch {
+        status.textContent = "Use the email link to get in touch.";
+      }
+      resetTimer = setTimeout(() => {
+        status.textContent = "";
+      }, 3500);
+    });
+  });
+
   // Research images retain direct links when scripting is unavailable.
   const imageDialog = document.querySelector(".image-dialog");
   if (imageDialog && typeof imageDialog.showModal === "function") {

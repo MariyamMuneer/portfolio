@@ -14,8 +14,8 @@
 }
 :root {
   --paper: #f5f1e9;
-  --ink: #242428;
-  --secondary: #636168;
+  --ink: #1c1c22;
+  --secondary: #44434b;
   --line: #d8d3cb;
   --soft: #ebe7de;
   --dark: #232428;
@@ -53,8 +53,8 @@ em {
   font-size: 22px;
 }
 .wordmark span {
-  font-size: 9px;
-  font-weight: 450;
+  font-size: 12px;
+  font-weight: 550;
   letter-spacing: 0.04em;
   float: right;
   clear: both;
@@ -62,7 +62,7 @@ em {
   padding-top: 3px;
 }
 .site-header nav a {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 550;
 }
 .site-header nav a:after {
@@ -85,10 +85,10 @@ em {
   margin-bottom: 35px;
 }
 .hero-topline .eyebrow {
-  font-size: 10px;
+  font-size: 12px;
 }
 .hero-location {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--secondary);
 }
 .hero-location span {
@@ -112,8 +112,8 @@ em {
 .hero-introduction h1 {
   font-size: clamp(68px, 6.4vw, 98px);
   line-height: 1.04;
-  letter-spacing: -0.075em;
-  font-weight: 500;
+  letter-spacing: -0.055em;
+  font-weight: 600;
   white-space: nowrap;
 }
 .hero-line {
@@ -147,7 +147,7 @@ em {
   transform: rotate(-2deg);
 }
 .hero-summary {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--secondary);
   margin-top: 22px;
@@ -168,7 +168,7 @@ em {
   color: var(--paper);
   border: 1px solid var(--ink);
   border-radius: 100px;
-  font-size: 11px;
+  font-size: 13px;
   text-decoration: none;
   padding: 15px 21px;
   transition:
@@ -190,7 +190,7 @@ em {
   transform: translateY(3px);
 }
 .open-note {
-  font-size: 9px;
+  font-size: 12px;
   color: var(--secondary);
   display: flex;
   align-items: center;
@@ -237,7 +237,7 @@ em {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  font-size: 8px;
+  font-size: 11px;
   color: var(--secondary);
   background: var(--paper);
   padding: 12px 12px 0;
@@ -247,13 +247,13 @@ em {
 .hero-portrait figcaption > span:last-child {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
 }
 .portrait-index {
   position: absolute;
   right: -55px;
   top: 27%;
-  font-size: 9px;
+  font-size: 12px;
   writing-mode: vertical-rl;
   letter-spacing: 0.1em;
   color: var(--secondary);
@@ -266,7 +266,7 @@ em {
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.5;
 }
 .scroll-cue-arrow {
@@ -293,7 +293,7 @@ em {
   gap: 15px;
   padding: 20px 0;
   border-top: 1px solid var(--line);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--secondary);
 }
@@ -312,7 +312,7 @@ em {
 }
 .work-intro h2 {
   font-size: 48px;
-  font-weight: 450;
+  font-weight: 550;
   letter-spacing: -0.055em;
   line-height: 1.08;
 }
@@ -320,7 +320,7 @@ em {
   font-size: 1.17em;
 }
 .work-intro > p {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.8;
   color: var(--secondary);
   max-width: 250px;
@@ -338,7 +338,7 @@ em {
   margin-bottom: 24px;
 }
 .creative-project .eyebrow {
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   margin-bottom: 14px;
   display: flex;
@@ -346,7 +346,7 @@ em {
   gap: 16px;
 }
 .project-index {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0;
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -359,9 +359,9 @@ em {
 }
 .creative-project h3 {
   font-size: clamp(45px, 5vw, 70px);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.07;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.045em;
 }
 .creative-project h3 a {
   display: inline-flex;
@@ -383,7 +383,7 @@ em {
   transform: translate(6px, -6px);
 }
 .creative-project-heading > p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--secondary);
   line-height: 1.7;
   margin-right: 30px;
@@ -410,7 +410,7 @@ em {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.05em;
   z-index: 3;
 }
@@ -457,7 +457,7 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 9px;
+  font-size: 12px;
 }
 .preview-footer i {
   font-style: normal;
@@ -468,7 +468,7 @@ em {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  font-size: 10px;
+  font-size: 12px;
   background: var(--paper);
   color: var(--ink);
   padding: 10px 14px;
@@ -496,7 +496,7 @@ em {
   margin-top: 20px;
 }
 .project-underneath > p {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--secondary);
 }
 .case-link {
@@ -504,7 +504,7 @@ em {
   align-items: center;
   gap: 22px;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   padding: 10px 0;
   border-bottom: 1px solid var(--ink);
   transition:
@@ -595,7 +595,7 @@ em {
   letter-spacing: -0.02em;
 }
 .short-description {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--secondary);
   max-width: 300px;
   line-height: 1.8;
@@ -619,7 +619,7 @@ em {
   color: var(--accent);
 }
 .research-footnote > p {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
   color: var(--secondary);
 }
@@ -730,7 +730,7 @@ em {
   margin-bottom: 18px;
 }
 .about-story > p:not(.about-lead) {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   color: var(--secondary);
   max-width: 470px;
@@ -744,14 +744,14 @@ em {
   border-top: 1px solid var(--line);
 }
 .creative-about-facts dt {
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--secondary);
 }
 .creative-about-facts dd {
   margin: 8px 0 0;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.9;
 }
 .site-footer {
@@ -769,7 +769,7 @@ em {
 }
 .creative-footer-title h2 {
   font-size: clamp(58px, 6.8vw, 96px);
-  letter-spacing: -0.065em;
+  letter-spacing: -0.045em;
   line-height: 1.03;
   margin: 24px 0;
 }
@@ -806,20 +806,20 @@ em {
   margin-top: 24px;
 }
 .footer-invitation > a {
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   border-bottom: 1px solid #8c8b94;
   padding-bottom: 5px;
 }
 .footer-invitation > p {
-  font-size: 10px;
+  font-size: 12px;
   color: #c5c4cb;
 }
 .footer-bottom {
-  font-size: 10px;
+  font-size: 12px;
 }
 .case-intro h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .case-intro > .eyebrow,
 .section-title .eyebrow {
@@ -830,7 +830,7 @@ em {
   color: var(--accent);
 }
 .story-copy .lead {
-  font-weight: 450;
+  font-weight: 550;
 }
 .story-copy .reflection {
   font-style: italic;
@@ -840,13 +840,13 @@ em {
   background: #eeebe4;
 }
 .next-project h2 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .next-project a:hover {
   color: var(--accent);
 }
 .facts dd {
-  font-size: 12px;
+  font-size: 14px;
 }
 .image-dialog {
   border-radius: 7px;
@@ -925,7 +925,7 @@ em {
     gap: 15px;
   }
   .creative-button {
-    font-size: 10px;
+    font-size: 12px;
     gap: 22px;
   }
   .scroll-cue {
@@ -943,7 +943,7 @@ em {
     gap: 6%;
   }
   .creative-project-heading > p {
-    font-size: 11px;
+    font-size: 13px;
   }
   .screen-callout {
     font-size: 19px;
@@ -956,10 +956,10 @@ em {
     font-size: 29px;
   }
   .short-description {
-    font-size: 11px;
+    font-size: 13px;
   }
   .art-label {
-    font-size: 8px;
+    font-size: 11px;
     left: 18px;
     right: 18px;
   }
@@ -1000,7 +1000,7 @@ em {
     font-size: 7.5vw;
   }
   .hero-summary {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero-greeting {
     font-size: 16px;
@@ -1010,11 +1010,11 @@ em {
     margin-top: 22px;
   }
   .open-note {
-    font-size: 8px;
+    font-size: 11px;
   }
   .portrait-index {
     right: -30px;
-    font-size: 8px;
+    font-size: 11px;
   }
   .work-intro h2 {
     font-size: 38px;
@@ -1029,10 +1029,10 @@ em {
     gap: 10px;
   }
   .research-footnote > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .creative-project .eyebrow {
-    font-size: 8px;
+    font-size: 11px;
     gap: 10px;
   }
   .project-movelight h3 a {
@@ -1058,7 +1058,7 @@ em {
     min-width: 130px;
   }
   .wordmark span {
-    font-size: 8px;
+    font-size: 11px;
     max-width: 100%;
     padding-top: 0;
   }
@@ -1067,7 +1067,7 @@ em {
     gap: 12px;
   }
   .site-header nav a {
-    font-size: 10px;
+    font-size: 12px;
   }
   .js-ready .site-header .desktop-nav {
     display: none;
@@ -1081,7 +1081,7 @@ em {
     padding: 9px 13px;
     background: transparent;
     color: var(--ink);
-    font-size: 10px;
+    font-size: 12px;
     cursor: pointer;
   }
   .menu-bars {
@@ -1131,13 +1131,13 @@ em {
     border-bottom: 1px solid var(--line);
   }
   .mobile-menu-top .eyebrow {
-    font-size: 9px;
+    font-size: 12px;
   }
   .menu-close {
     border: 0;
     background: transparent;
     color: var(--ink);
-    font-size: 11px;
+    font-size: 13px;
     padding: 8px 0;
     cursor: pointer;
   }
@@ -1165,7 +1165,7 @@ em {
     padding: 14px 0;
   }
   .mobile-menu nav a > span {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--accent);
     letter-spacing: 0;
   }
@@ -1173,7 +1173,7 @@ em {
     color: var(--accent);
   }
   .mobile-menu-note {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--secondary);
     padding-top: 10px;
   }
@@ -1187,11 +1187,11 @@ em {
     margin-bottom: 24px;
   }
   .hero-topline .eyebrow {
-    font-size: 8px;
+    font-size: 11px;
     letter-spacing: 0.075em;
   }
   .hero-location {
-    font-size: 8px;
+    font-size: 11px;
   }
   .hero-location span {
     margin-left: 5px;
@@ -1213,7 +1213,7 @@ em {
   }
   .hero-introduction h1 {
     font-size: 9.3vw;
-    letter-spacing: -0.065em;
+    letter-spacing: -0.045em;
   }
   .hero-line.serif-line {
     font-size: 1.68em;
@@ -1223,7 +1223,7 @@ em {
     bottom: 2px;
   }
   .hero-summary {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 18px;
     max-width: 205px;
   }
@@ -1235,14 +1235,14 @@ em {
   }
   .creative-button {
     padding: 11px 14px;
-    font-size: 9px;
+    font-size: 12px;
     gap: 20px;
   }
   .creative-button > span {
-    font-size: 14px;
+    font-size: 16px;
   }
   .open-note {
-    font-size: 8px;
+    font-size: 11px;
     max-width: 100%;
     gap: 6px;
   }
@@ -1268,10 +1268,10 @@ em {
   .hero-portrait figcaption {
     padding: 7px 6px 0;
     gap: 3px;
-    font-size: 7px;
+    font-size: 11px;
   }
   .hero-portrait figcaption > span:last-child {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.15;
   }
   .portrait-index {
@@ -1281,7 +1281,7 @@ em {
     bottom: -62px;
     left: 10px;
     gap: 7px;
-    font-size: 8px;
+    font-size: 11px;
   }
   .scroll-cue-arrow {
     width: 30px;
@@ -1289,7 +1289,7 @@ em {
     font-size: 15px;
   }
   .hero-bottomline {
-    font-size: 8px;
+    font-size: 11px;
     padding: 16px 0;
     align-items: start;
   }
@@ -1311,7 +1311,7 @@ em {
     min-width: 200px;
   }
   .work-intro > p {
-    font-size: 9px;
+    font-size: 12px;
     max-width: 125px;
     padding-top: 5px;
   }
@@ -1324,14 +1324,14 @@ em {
     gap: 15px;
   }
   .creative-project .eyebrow {
-    font-size: 8px;
+    font-size: 11px;
     gap: 10px;
     margin-bottom: 12px;
   }
   .project-index {
     height: 23px;
     width: 23px;
-    font-size: 9px;
+    font-size: 12px;
   }
   .creative-project h3 {
     font-size: 36px;
@@ -1349,7 +1349,7 @@ em {
     aspect-ratio: 1.3;
   }
   .art-label {
-    font-size: 7px;
+    font-size: 11px;
     top: 14px;
     left: 14px;
     right: 14px;
@@ -1376,13 +1376,13 @@ em {
     left: 14px;
     right: 14px;
     bottom: 13px;
-    font-size: 7px;
+    font-size: 11px;
   }
   .preview-footer i {
     margin: 0 4px;
   }
   .preview-open {
-    font-size: 8px;
+    font-size: 11px;
     gap: 9px;
     padding: 8px 11px;
   }
@@ -1396,12 +1396,12 @@ em {
     margin-top: 13px;
   }
   .project-underneath > p {
-    font-size: 8px;
+    font-size: 11px;
     max-width: 170px;
     line-height: 1.8;
   }
   .case-link {
-    font-size: 9px;
+    font-size: 12px;
     gap: 13px;
     padding: 8px 0;
     white-space: nowrap;
@@ -1440,7 +1440,7 @@ em {
     display: none;
   }
   .short-description {
-    font-size: 11px;
+    font-size: 13px;
     margin: 12px 0 15px;
     max-width: 320px;
     line-height: 1.8;
@@ -1456,7 +1456,7 @@ em {
     font-size: 30px;
   }
   .research-footnote > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .research-footnote > p br {
     display: none;
@@ -1540,7 +1540,7 @@ em {
     max-width: 360px;
   }
   .about-story > p:not(.about-lead) {
-    font-size: 11px;
+    font-size: 13px;
   }
   .creative-about-facts {
     gap: 20px;
@@ -1548,17 +1548,17 @@ em {
     padding-top: 18px;
   }
   .creative-about-facts dt {
-    font-size: 8px;
+    font-size: 11px;
   }
   .creative-about-facts dd {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.9;
   }
   .site-footer {
     padding-top: 35px;
   }
   .site-footer .eyebrow {
-    font-size: 8px;
+    font-size: 11px;
   }
   .creative-footer-title {
     gap: 15px;
@@ -1583,23 +1583,23 @@ em {
     margin-top: 5px;
   }
   .footer-invitation > a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .footer-invitation > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .footer-top {
     padding-bottom: 27px;
   }
   .footer-bottom {
-    font-size: 9px;
+    font-size: 12px;
     gap: 20px;
   }
   .copyright {
-    font-size: 8px;
+    font-size: 11px;
   }
   .footer-bottom > a:last-child {
-    font-size: 8px;
+    font-size: 11px;
   }
   .story-copy .reflection {
     font-size: 24px;
@@ -1607,7 +1607,7 @@ em {
 }
 @media (max-width: 370px) {
   .hero-greeting {
-    font-size: 13px;
+    font-size: 15px;
   }
   .hero-introduction h1 {
     font-size: 9.5vw;
@@ -1617,17 +1617,17 @@ em {
     grid-template-columns: 1fr 0.6fr;
   }
   .hero-summary {
-    font-size: 9px;
+    font-size: 12px;
     max-width: 180px;
   }
   .hero-topline .eyebrow {
-    font-size: 7px;
+    font-size: 11px;
   }
   .hero-location {
-    font-size: 7px;
+    font-size: 11px;
   }
   .hero-portrait figcaption > span:last-child {
-    font-size: 8px;
+    font-size: 11px;
   }
   .portrait-composition {
     margin-top: 36px;
@@ -1637,7 +1637,7 @@ em {
   }
   .scroll-cue {
     left: 3px;
-    font-size: 7px;
+    font-size: 11px;
   }
   .scroll-cue-arrow {
     width: 26px;
@@ -1684,7 +1684,7 @@ em {
     grid-template-columns: 1fr;
   }
   .hero-bottomline {
-    font-size: 7px;
+    font-size: 11px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1708,90 +1708,90 @@ em {
   margin-left: 8px;
 }
 .short-description {
-  font-size: 13px;
+  font-size: 15px;
 }
 .project-underneath > p {
-  font-size: 11px;
-}
-.case-link {
-  font-size: 12px;
-}
-.about-story > p:not(.about-lead) {
   font-size: 13px;
 }
+.case-link {
+  font-size: 14px;
+}
+.about-story > p:not(.about-lead) {
+  font-size: 15px;
+}
 .creative-about-facts dd {
-  font-size: 12px;
+  font-size: 14px;
 }
 .creative-about-facts dt {
-  font-size: 10px;
+  font-size: 12px;
 }
 .footer-invitation > p {
-  font-size: 11px;
+  font-size: 13px;
 }
 .footer-bottom {
-  font-size: 11px;
+  font-size: 13px;
 }
 .project-sidecopy .eyebrow {
   line-height: 1.8;
 }
 @media (max-width: 700px) {
   .hero-summary {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 220px;
   }
   .hero-topline .eyebrow,
   .hero-location {
-    font-size: 9px;
+    font-size: 12px;
   }
   .hero-greeting {
     font-size: 16px;
   }
   .creative-button {
-    font-size: 10px;
+    font-size: 12px;
   }
   .open-note {
-    font-size: 9px;
+    font-size: 12px;
   }
   .hero-portrait figcaption {
-    font-size: 8px;
+    font-size: 11px;
   }
   .hero-portrait figcaption > span:last-child {
     display: none;
   }
   .work-intro > p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .creative-project .eyebrow {
-    font-size: 9px;
+    font-size: 12px;
   }
   .project-underneath > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .case-link {
-    font-size: 11px;
+    font-size: 13px;
   }
   .short-description {
-    font-size: 13px;
+    font-size: 15px;
   }
   .research-footnote > p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .creative-about-facts dt {
-    font-size: 9px;
+    font-size: 12px;
   }
   .creative-about-facts dd {
-    font-size: 11px;
+    font-size: 13px;
   }
   .about-story > p:not(.about-lead) {
-    font-size: 13px;
+    font-size: 15px;
   }
   .footer-invitation > p,
   .footer-bottom {
-    font-size: 11px;
+    font-size: 13px;
   }
   .copyright,
   .footer-bottom > a:last-child {
-    font-size: 9px;
+    font-size: 12px;
   }
   .footer-bottom a {
     padding-block: 5px;
@@ -1805,27 +1805,730 @@ em {
 @media (max-width: 370px) {
   .hero-topline .eyebrow,
   .hero-location {
-    font-size: 8px;
+    font-size: 11px;
   }
   .hero-summary {
-    font-size: 11px;
+    font-size: 13px;
   }
   .hero-greeting {
-    font-size: 14px;
+    font-size: 16px;
   }
   .creative-button {
-    font-size: 9px;
+    font-size: 12px;
   }
   .open-note {
-    font-size: 8px;
+    font-size: 11px;
   }
   .project-underneath > p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .creative-project .eyebrow {
-    font-size: 8px;
+    font-size: 11px;
   }
   .case-link {
+    font-size: 13px;
+  }
+}
+
+/* Readability and interaction refinement — shared across the portfolio. */
+body {
+  font-weight: 500;
+}
+h1,
+h2,
+h3 {
+  color: var(--ink);
+}
+.creative-hero h1,
+.creative-project h3,
+.case-intro h1 {
+  font-weight: 650;
+}
+.hero-greeting {
+  font-weight: 600;
+}
+.hero-line em,
+.work-intro em,
+.project-subline,
+.about-composition em {
+  -webkit-text-stroke: 0.2px currentColor;
+}
+.hero-summary {
+  font-size: 17px;
+  font-weight: 500;
+  color: #393840;
+}
+.creative-project .eyebrow,
+.eyebrow {
+  font-weight: 600;
+}
+.creative-project .short-description,
+.about-story > p:not(.about-lead),
+.story-copy > p,
+.contribution p,
+.decision-list p,
+.decision-block p,
+.plain-list li {
+  font-weight: 500;
+  color: var(--secondary);
+}
+.story-copy > p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.contribution p,
+.decision-list p,
+.decision-block p,
+.plain-list li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.section-title h2 {
+  font-weight: 600;
+}
+.case-deck {
+  color: #3b3a43;
+  font-weight: 500;
+}
+.facts dd {
+  font-size: 15px;
+  font-weight: 550;
+}
+.facts dt,
+.story-nav a {
+  font-size: 12px;
+  font-weight: 600;
+}
+.story-nav a[aria-current] {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.findings p {
+  font-size: 14px;
+}
+.findings h3 {
+  font-weight: 600;
+}
+.case-link,
+.creative-button {
+  font-weight: 650;
+}
+.case-link {
+  min-height: 44px;
+}
+.site-header nav a {
+  font-size: 14px;
+  font-weight: 650;
+}
+.wordmark span {
+  font-weight: 550;
+}
+.creative-preview,
+.case-cover {
+  border-radius: 28px;
+  border: 1px solid #24242812;
+  transition:
+    box-shadow 0.35s var(--ease),
+    transform 0.35s var(--ease);
+  transform: perspective(1200px) rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
+  transform-origin: center;
+}
+.creative-preview:hover {
+  box-shadow: 0 14px 35px #24242812;
+}
+.zoom-image {
+  border-radius: 20px;
+}
+.hero-portrait img {
+  border-radius: 18px 18px 0 0;
+}
+.hero-portrait {
+  border-radius: 18px;
+}
+.hero-portrait:before {
+  border-radius: 18px;
+}
+.preview-open {
+  font-weight: 650;
+  border: 1px solid #fff9;
+  padding: 12px 16px;
+}
+.art-label,
+.preview-footer {
+  font-weight: 600;
+}
+.art-label {
+  left: 25px;
+  right: 25px;
+  top: 22px;
+}
+.preview-footer {
+  bottom: 22px;
+}
+.project-index {
+  font-weight: 700;
+  border-color: #96909f;
+  color: #37343e;
+}
+.creative-button:active {
+  transform: translateY(0) scale(0.96);
+}
+.case-link:active,
+.contact-orbit:active {
+  transform: scale(0.97);
+}
+.creative-about-facts > div {
+  min-width: 0;
+}
+.education-link {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fff;
+  padding: 12px 15px;
+  border: 1px solid #d8d3cb;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #26252d;
+  font-size: 13px;
+  line-height: 1.7;
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s,
+    border-color 0.25s;
+}
+.education-link:hover,
+.education-link:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px #28243812;
+  border-color: var(--accent);
+}
+.google-word {
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+.google-blue {
+  color: #1765cc;
+}
+.google-red {
+  color: #c5221f;
+}
+.google-yellow {
+  color: #946300;
+}
+.google-green {
+  color: #137333;
+}
+.course-platform {
+  font-size: 12px;
+  color: #45434a;
+}
+.coursera-word {
+  color: #0056d2;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+.creative-about-facts dd {
+  font-weight: 550;
+}
+.reading-progress {
+  height: 3px;
+  position: fixed;
+  inset: 0 0 auto;
+  background: var(--accent);
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);
+  pointer-events: none;
+}
+.site-header nav a[aria-current="location"]:after {
+  transform: scaleX(1);
+}
+.email-tools {
+  order: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-invitation > a {
+  order: 1;
+}
+.footer-invitation > p {
+  order: 3;
+}
+.copy-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--paper);
+  background: transparent;
+  border: 1px solid #8c8b94;
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-family: var(--sans);
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    transform 0.25s;
+}
+.copy-email[hidden] {
+  display: none;
+}
+.copy-email svg {
+  height: 15px;
+  width: 15px;
+}
+.copy-email:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.copy-email:active {
+  transform: scale(0.96);
+}
+.copy-status {
+  font-size: 12px;
+  color: #e1e0ee;
+  max-width: 190px;
+}
+.footer-invitation {
+  flex-wrap: wrap;
+}
+.footer-bottom,
+.footer-invitation > p {
+  color: #dedde4;
+}
+.footer-invitation > p {
+  font-weight: 500;
+}
+.site-footer .eyebrow {
+  color: #dedde4;
+}
+.mobile-menu {
+  border-radius: 24px !important;
+}
+.mobile-menu nav a {
+  font-weight: 600;
+}
+.menu-toggle,
+.menu-close {
+  font-weight: 650;
+}
+@media (hover: hover) and (pointer: fine) {
+  .creative-preview,
+  .creative-project h3 a {
+    cursor:
+      url("assets/cursor-open.svg") 16 16,
+      pointer;
+  }
+  .zoom-image {
+    cursor: zoom-in;
+  }
+}
+@media (max-width: 1100px) {
+  .creative-project h3 {
+    font-size: 52px;
+  }
+  .hero-actions {
+    gap: 14px;
+  }
+  .open-note {
+    max-width: none;
+  }
+  .hero-summary {
+    font-size: 16px;
+  }
+  .art-label {
     font-size: 11px;
+  }
+  .project-subline {
+    font-size: 32px;
+  }
+}
+@media (max-width: 800px) and (min-width: 701px) {
+  .hero-introduction h1 {
+    font-size: 7vw;
+  }
+  .hero-summary {
+    font-size: 14px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: start;
+  }
+  .creative-project h3 {
+    font-size: 43px;
+  }
+  .project-subline {
+    font-size: 28px;
+  }
+  .creative-project .eyebrow {
+    font-size: 11px;
+  }
+  .project-sidecopy .short-description {
+    font-size: 14px;
+  }
+  .case-link {
+    font-size: 13px;
+  }
+  .art-label > span:last-child {
+    display: none;
+  }
+  .footer-invitation > p {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .hero-composition {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 15px;
+  }
+  .hero-introduction {
+    min-width: 0;
+  }
+  .hero-introduction h1 {
+    font-size: 8.7vw;
+  }
+  .hero-summary {
+    font-size: 14px;
+    line-height: 1.65;
+    max-width: 215px;
+  }
+  .hero-greeting {
+    font-size: 18px;
+  }
+  .hero-topline .eyebrow,
+  .hero-location {
+    font-size: 11px;
+  }
+  .hero-topline .eyebrow {
+    max-width: 160px;
+  }
+  .creative-button {
+    font-size: 12px;
+    padding: 12px 15px;
+    gap: 15px;
+  }
+  .open-note {
+    font-size: 11px;
+    max-width: 180px;
+    line-height: 1.6;
+  }
+  .hero-portrait figcaption {
+    font-size: 10px;
+    padding: 9px 8px 0;
+  }
+  .portrait-composition {
+    margin-top: 42px;
+  }
+  .hero-bottomline {
+    font-size: 11px;
+  }
+  .hero-bottomline > span:last-child {
+    max-width: 155px;
+  }
+  .scroll-cue {
+    font-size: 10px;
+    left: 4px;
+    bottom: -65px;
+    gap: 7px;
+  }
+  .scroll-cue-arrow {
+    height: 31px;
+    width: 31px;
+  }
+  .work-intro {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .work-intro h2 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+  .work-intro > p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .work-intro > p br {
+    display: none;
+  }
+  .creative-project h3 {
+    font-size: 35px;
+    letter-spacing: -0.045em;
+  }
+  .creative-project .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.045em;
+    line-height: 1.65;
+  }
+  .project-sidecopy h3 {
+    font-size: 48px;
+  }
+  .project-subline {
+    font-size: 29px !important;
+    line-height: 1.2 !important;
+  }
+  .short-description {
+    font-size: 15px !important;
+    line-height: 1.8;
+  }
+  .creative-preview,
+  .case-cover {
+    border-radius: 24px;
+  }
+  .creative-preview .art-label {
+    font-size: 10px;
+    top: 17px;
+    left: 17px;
+    right: 17px;
+  }
+  .creative-preview .art-label > span:last-child {
+    display: none;
+  }
+  .preview-footer {
+    font-size: 10px;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+  }
+  .preview-footer > span:first-child {
+    max-width: 120px;
+    line-height: 1.7;
+  }
+  .preview-footer i {
+    margin: 0 4px;
+  }
+  .preview-open {
+    font-size: 11px;
+    padding: 9px 12px;
+    gap: 8px;
+  }
+  .academy-preview {
+    aspect-ratio: 1.12;
+  }
+  .academy-desktop {
+    top: 22%;
+    width: 86%;
+    left: 4%;
+  }
+  .academy-phone {
+    bottom: 23%;
+    right: 5%;
+    width: 22%;
+  }
+  .project-underneath {
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+  }
+  .project-underneath > p {
+    font-size: 12px;
+    max-width: 100%;
+    line-height: 1.7;
+  }
+  .case-link {
+    font-size: 13px;
+    gap: 18px;
+  }
+  .research-footnote > p {
+    font-size: 12px;
+  }
+  .research-footnote > p br {
+    display: none;
+  }
+  .creative-about-facts {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .creative-about-facts dt {
+    font-size: 12px;
+  }
+  .creative-about-facts dd {
+    font-size: 14px;
+  }
+  .about-lead {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .about-story > p:not(.about-lead) {
+    font-size: 15px;
+  }
+  .about-composition h2 {
+    font-size: 39px;
+  }
+  .creative-about .eyebrow {
+    font-size: 12px;
+  }
+  .education-link {
+    font-size: 14px;
+  }
+  .course-platform {
+    font-size: 13px;
+  }
+  .site-footer .eyebrow {
+    font-size: 12px;
+  }
+  .footer-invitation > a {
+    font-size: 14px;
+  }
+  .footer-invitation > p {
+    font-size: 13px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+    gap: 18px;
+  }
+  .copyright,
+  .footer-bottom > a:last-child {
+    font-size: 11px;
+  }
+  .email-tools {
+    flex-wrap: wrap;
+  }
+  .footer-invitation {
+    gap: 20px;
+  }
+  .story-copy > p {
+    font-size: 16px;
+  }
+  .contribution p,
+  .decision-list p,
+  .decision-block p,
+  .plain-list li {
+    font-size: 15px;
+  }
+  .facts dd {
+    font-size: 14px;
+  }
+  .facts dt,
+  .story-nav a {
+    font-size: 12px;
+  }
+  .findings p {
+    font-size: 13px;
+  }
+  .findings h3 {
+    font-weight: 650;
+  }
+  .image-hint {
+    font-size: 11px;
+  }
+  .section-title h2 {
+    font-size: 34px;
+  }
+  .creative-footer-title h2 {
+    font-size: 47px;
+  }
+  .mobile-menu-note {
+    font-size: 12px;
+  }
+  .mobile-menu-top .eyebrow {
+    font-size: 12px;
+  }
+  .menu-close,
+  .js-ready .menu-toggle {
+    font-size: 12px;
+  }
+}
+@media (max-width: 370px) {
+  .hero-topline {
+    align-items: start;
+  }
+  .hero-topline .eyebrow,
+  .hero-location {
+    font-size: 10px;
+  }
+  .hero-introduction h1 {
+    font-size: 8.6vw;
+  }
+  .hero-greeting {
+    font-size: 16px;
+  }
+  .hero-summary {
+    font-size: 13px;
+  }
+  .hero-actions {
+    gap: 14px;
+  }
+  .creative-button {
+    font-size: 11px;
+    padding: 11px 12px;
+    gap: 13px;
+  }
+  .open-note {
+    font-size: 10px;
+  }
+  .hero-composition {
+    gap: 12px;
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+  .hero-portrait figcaption {
+    font-size: 9px;
+  }
+  .hero-bottomline {
+    font-size: 10px;
+  }
+  .creative-project h3 {
+    font-size: 30px;
+  }
+  .project-sidecopy h3 {
+    font-size: 43px;
+  }
+  .creative-project .eyebrow {
+    font-size: 10px;
+  }
+  .creative-footer-title h2 {
+    font-size: 41px;
+  }
+  .preview-footer {
+    font-size: 9px;
+  }
+  .preview-open {
+    font-size: 10px;
+    gap: 5px;
+    padding: 8px 10px;
+  }
+  .creative-project .art-label {
+    font-size: 9px;
+  }
+  .portrait-composition {
+    margin-right: 4px;
+  }
+  .scroll-cue {
+    left: 0;
+    font-size: 9px;
+  }
+  .hero-summary br {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .creative-preview {
+    transform: none !important;
+  }
+  .education-link:hover,
+  .creative-button:hover {
+    transform: none;
+  }
+  .reading-progress {
+    transition: none;
+  }
+}
+.site-footer h2 {
+  color: var(--paper);
+}
+@media (max-width: 700px) {
+  .hero-summary br {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .section-title h2 br {
+    display: initial;
+  }
+  .section-title h2 {
+    overflow-wrap: break-word;
   }
 }

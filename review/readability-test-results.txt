@@ -1,0 +1,14 @@
+PASS text contrast .hero-summary: 10.28:1
+PASS text contrast .short-description: 8.67:1
+PASS text contrast .site-footer h2: 13.40:1
+PASS text contrast .google-blue: 5.57:1
+PASS text contrast .google-red: 5.80:1
+PASS text contrast .google-yellow: 5.19:1
+PASS text contrast .google-green: 5.95:1
+PASS text contrast .coursera-word: 6.44:1
+PASS desktop pointer tilt responds and resets; contextual native SVG cursor with pointer fallback
+PASS reading position indicator and active About navigation update while scrolling
+PASS copy-email action copies the correct address and announces confirmation
+PASS reduced motion disables pointer tilt
+PASS larger homepage and case-study type fits at 390px
+PASS larger homepage and case-study type fits at 320px

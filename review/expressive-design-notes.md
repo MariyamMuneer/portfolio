@@ -35,3 +35,11 @@ Work is isolated on `redesign/expressive-portfolio`. The main branch and product
 ## Remaining limitations
 
 External demo, Figma, LinkedIn and reference destinations could not be independently checked through the restricted proxy. Their original URLs are preserved. The supplied resume PDF is unchanged. Pickwise remains an unlaunched concept with no second test round; its unresolved protection and failure paths are retained in the case study.
+
+## Readability and interaction refinement
+
+The follow-up review strengthened body weights, headline weights, supporting text colours and responsive type sizes. Small metadata is generally 11–12px; homepage descriptions are 15px on mobile and case-study body copy is 16px. Headings keep their deliberate line breaks on narrow screens. Supporting description contrast is approximately 8.7:1, and all branded Google/Coursera letters exceed 4.5:1 on their white surface. The Google palette uses darker brand-related shades for legibility, rather than low-contrast bright yellow.
+
+Project surfaces now use 24–28px corners. Extra script annotations were removed to keep the screen compositions cleaner. Desktop pointer motion adds at most one degree of surface tilt, scheduled per animation frame; it is disabled for touch and reduced motion. A native 32px project cursor has a standard pointer fallback; no cursor-following element or hidden system cursor is used.
+
+A three-pixel reading-position line and active section navigation help orientation. The copy-email button uses the Clipboard API with visible/live-region success or failure feedback and is hidden when the API or scripting is unavailable. The real email link remains available.

@@ -27,10 +27,13 @@ After approval, use the existing manual Netlify deployment workflow with the ext
 - A portrait-led asymmetrical hero with staged text, image and action entrances.
 - Warm ivory, charcoal and a restrained cobalt accent.
 - Locally hosted Manrope and Instrument Serif typography.
-- Three distinct project compositions, ordered MSN Academy, Pickwise, Move Light.
+- Three distinct project compositions, ordered MSN Academy, Pickwise, Move Light, with clean 24–28px rounded surfaces.
+- Larger, more firmly weighted typography and darker supporting text across desktop and mobile.
+- Contrast-safe Google lettering and Coursera styling linked to the foundations course.
 - Short homepage writing; research evidence and limitations remain inside the case studies.
 - Native-dialog mobile navigation, keyboard focus handling, image expansion and quick case-study transitions.
 - Scroll reveals and hover responses implemented with the Web Animations API and CSS. Reduced-motion and no-JavaScript paths are supported.
+- Subtle desktop pointer tilt, a contextual native project cursor, reading progress, active navigation and accessible copy-email feedback.
 
 ## Content and portrait
 
@@ -46,12 +49,13 @@ Start the local server on port 8090, then run:
 
 ```sh
 python review/check_expressive.py
+python review/check_readability.py
 node --check site.js
 ```
 
 The browser test requires Python Playwright and Chromium at `/usr/bin/chromium`; these are testing tools, not app runtime dependencies. Override `PORTFOLIO_TEST_URL` or `PORTFOLIO_TEST_OUTPUT` if needed.
 
-See `review/expressive-test-results.txt`, `review/animation-evidence.json` and `review/expressive-design-notes.md`. There is no package-based build or lint script in this static project.
+See `review/expressive-test-results.txt`, `review/readability-test-results.txt`, `review/animation-evidence.json` and `review/expressive-design-notes.md`. There is no package-based build or lint script in this static project.
 
 ## Fonts
 

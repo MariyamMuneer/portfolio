@@ -33,13 +33,7 @@ PASS featured project order and original portrait prominently in hero
 PASS no-JavaScript navigation, content and native research disclosure
 PASS initial and changed reduced-motion preference; menu usable without animation
 PASS no JavaScript errors or local HTTP failures
+PASS larger-text mobile sentence spacing and active navigation reset in hero
 PASS node --check site.js and git diff --check
-PASS Prettier checks for HTML, creative.css and site.js
-PASS original JPEG and netlify.toml bytes preserved
-PASS substantive main-content text in all three case studies preserved
-PASS primary text contrast 13.73:1; secondary 5.42:1; accent 6.16:1; secondary on About 4.93:1
-PASS two local WOFF2 fonts: 46,964 bytes total; package SHA-512 integrity verified
-NO framework build/lint scripts exist in this static project
-NOT VERIFIED external reference/demo availability: requests blocked by network proxy
-NOT CREATED hosted Netlify preview: authentication/site configuration unavailable
-NOT CHANGED main branch or production deployment
+See readability-test-results.txt for measured contrast, pointer, clipboard and type checks.
+No production deploy or main branch update was performed.
