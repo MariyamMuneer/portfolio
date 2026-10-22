@@ -1,40 +1,58 @@
-# Mariyam Muneer — portfolio
+# Mariyam Muneer — expressive portfolio review
 
-A lightweight static portfolio, retaining the existing HTML/CSS asset structure and Netlify configuration. No framework, package install or build step is required.
+This is a substantial visual and interaction redesign of the existing static portfolio. It uses the original HTML pages, project media, resume, contact links and Netlify structure. No framework migration, build command or package installation is needed to run it.
 
-## Preview locally
+## Preview and approval
 
-From the portfolio directory:
+Review branch: `redesign/expressive-portfolio`. This branch is separate from `main`. No production deployment has been performed.
+
+- `review/desktop-walkthrough.mp4`: recorded browser walkthrough showing the hero entrance, scrolling compositions and hover behaviour.
+- `review/hero-desktop.png` and `review/hero-mobile.png`: opening-screen previews.
+- `portfolio-final.zip`: ready-to-extract review build, with `index.html` at the archive root. Large review recordings/screenshots are excluded from this deployment ZIP.
+
+For a working local preview, extract the ZIP, open a terminal in that folder and run:
 
 ```sh
-python -m http.server 8080
+python -m http.server 8090
 ```
 
-Open the local address shown by Python. The homepage is `index.html`. The featured case studies are `msn-academy.html`, `pickwise.html` and `move-light.html`.
+Then open the local address shown by Python. Everything runs without a JavaScript framework or external runtime assets.
 
-## Approved portrait
+An authenticated Netlify preview could not be created: the environment has no Netlify account binding, token or site association. To review online, use a separate manual Netlify test site, or an authenticated draft deploy of the extracted folder to the existing site **without `--prod`**. Neither GitHub `main` nor the existing Netlify production site should be replaced until this version is approved.
 
-The exact approved photo from `Black.zip` is included at `assets/mariyam-professional-portrait.jpg`. The JPEG bytes are unchanged from the uploaded `Black.jpg`; no generation, retouching, recolouring or cropping was performed. The image uses its original dimensions and proportions. The old generated photo and temporary placeholder are removed.
+After approval, use the existing manual Netlify deployment workflow with the extracted folder. Preserve `netlify.toml`: publish directory `.`, build command blank.
 
-## Netlify deployment after approval
+## What changed
 
-The existing `netlify.toml` is unchanged: publish directory `.`; no build command.
+- A portrait-led asymmetrical hero with staged text, image and action entrances.
+- Warm ivory, charcoal and a restrained cobalt accent.
+- Locally hosted Manrope and Instrument Serif typography.
+- Three distinct project compositions, ordered MSN Academy, Pickwise, Move Light.
+- Short homepage writing; research evidence and limitations remain inside the case studies.
+- Native-dialog mobile navigation, keyboard focus handling, image expansion and quick case-study transitions.
+- Scroll reveals and hover responses implemented with the Web Animations API and CSS. Reduced-motion and no-JavaScript paths are supported.
 
-1. Extract `portfolio-final.zip` to a new empty folder. `index.html`, `style.css`, `site.js`, `netlify.toml` and `assets/` should be at its root.
-2. Preview the folder locally and review the portrait before publication.
-3. To review online without altering production, create a separate manual Netlify site or use an authenticated draft deploy (`netlify deploy --dir <folder> --site <existing-site-id>` without `--prod`). Netlify access is required; no credentials were available during this redesign.
-4. After approval, upload the extracted folder through the existing site's manual deploy workflow, or run a production deploy using your authenticated Netlify setup.
+## Content and portrait
 
-No GitHub connection is needed. The redesign was developed on `redesign/editorial-portfolio` and replaces the earlier files on the GitHub `main` branch at the user’s request. No Netlify deployment was performed.
+The approved JPEG from `Black.zip` remains unchanged at `assets/mariyam-professional-portrait.jpg`. The hero displays the original image without generation, retouching, recolouring or a crop; the surrounding frame is styled in CSS.
 
-## Content and links
+Your Biotechnology studies, Google UI/UX foundations through Coursera and vibe coding with Codex and Claude remain in About. No course completion or certificate is claimed. The original resume PDF is preserved.
 
-The original project media and functional links are retained. Velora and Nourish Lab keep their URLs for existing visitors, but are not featured. No unfinished SaaS project is displayed. The resume PDF is the existing supplied file; it has not been rewritten.
-
-Pickwise follows the final case-study notes: four weeks; five participants, three with OLX experience and two without second-hand experience; the redesign was not re-tested. The About section mentions the Google UI/UX course on Coursera without claiming completion or certification, plus Biotechnology studies and vibe coding with Codex and Claude.
-
-See `review/redesign-notes.md` and `review/test-results.txt` for scope, limitations and validation.
+MSN Academy distinguishes shared audit work, your desktop/design/handoff responsibilities, your teammate's mobile prototype and the developer-built demo. Pickwise retains the corrected participant mix, four-week duration and untested redesign limitations. Move Light separates design direction from AI-generated implementation. The old Velora and Nourish Lab URLs remain available but unfeatured.
 
 ## Validation
 
-Browser checks are recorded in `review/test-results.txt`. To rerun, start the local server on port 8080, then run `python review/check_portfolio.py` in an environment with Python Playwright and `/usr/bin/chromium`. Generated review screenshots are ignored by Git. Run `node --check site.js` for JavaScript syntax. No package-based build or lint scripts existed in the original static project.
+Start the local server on port 8090, then run:
+
+```sh
+python review/check_expressive.py
+node --check site.js
+```
+
+The browser test requires Python Playwright and Chromium at `/usr/bin/chromium`; these are testing tools, not app runtime dependencies. Override `PORTFOLIO_TEST_URL` or `PORTFOLIO_TEST_OUTPUT` if needed.
+
+See `review/expressive-test-results.txt`, `review/animation-evidence.json` and `review/expressive-design-notes.md`. There is no package-based build or lint script in this static project.
+
+## Fonts
+
+The two WOFF2 files are self-hosted, with the original font licenses in `assets/fonts/`. They came from Fontsource packages at version 5.3.0; archive SHA-512 integrity was checked against registry metadata. No font service request is made at runtime.

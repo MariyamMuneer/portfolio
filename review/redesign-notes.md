@@ -1,3 +1,5 @@
+> Historical notes for the previous editorial version. See `expressive-design-notes.md` for the current review build.
+
 # Redesign review
 
 ## Source availability and audit

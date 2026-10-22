@@ -1,0 +1,126 @@
+[
+  {
+    "target": "greeting",
+    "duration": 600,
+    "delay": 0,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(16px)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px)"
+      }
+    ]
+  },
+  {
+    "target": "line",
+    "duration": 950,
+    "delay": 110,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(90%) rotate(2deg)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px) rotate(0deg)"
+      }
+    ]
+  },
+  {
+    "target": "line",
+    "duration": 950,
+    "delay": 250,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(90%) rotate(2deg)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px) rotate(0deg)"
+      }
+    ]
+  },
+  {
+    "target": "portrait",
+    "duration": 1100,
+    "delay": 210,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(35px) rotate(-4deg) scale(0.96)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px) rotate(0deg) scale(1)"
+      }
+    ]
+  },
+  {
+    "target": "summary",
+    "duration": 650,
+    "delay": 390,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(15px)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px)"
+      }
+    ]
+  },
+  {
+    "target": "actions",
+    "duration": 650,
+    "delay": 490,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(15px)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px)"
+      }
+    ]
+  },
+  {
+    "target": "rule",
+    "duration": 650,
+    "delay": 590,
+    "keyframes": [
+      {
+        "opacity": "0",
+        "transform": "translateY(15px)"
+      },
+      {
+        "opacity": "1",
+        "transform": "translateY(0px)"
+      }
+    ]
+  },
+  {
+    "target": "scroll-cue-arrow motion-ready",
+    "duration": 1800,
+    "delay": 1200,
+    "keyframes": [
+      {
+        "opacity": null,
+        "transform": "translateY(0px)"
+      },
+      {
+        "opacity": null,
+        "transform": "translateY(5px)"
+      },
+      {
+        "opacity": null,
+        "transform": "translateY(0px)"
+      }
+    ]
+  }
+]

@@ -1,15 +1,14 @@
-NETLIFY — STATIC DEPLOYMENT
+EXPRESSIVE PORTFOLIO — REVIEW BUILD
 
-Extract portfolio-final.zip to a new folder. The archive has index.html at its root.
-Upload the extracted folder using your existing Netlify manual deployment workflow only after approving the redesign.
+1. Extract portfolio-final.zip to an empty folder. index.html must be at its root.
+2. Preview before replacing production. From that folder run:
+   python -m http.server 8090
+3. Review the separate walkthrough and screenshots on the expressive redesign branch.
+4. After approval, upload the extracted folder using the existing Netlify manual deployment workflow.
+
 Build command: blank. Publish directory: .
-No package install, GitHub connection or framework build is required.
+No framework, dependency install or GitHub connection is required.
 
-APPROVED PORTRAIT INCLUDED
-The exact Black.jpg supplied in Black.zip is included as assets/mariyam-professional-portrait.jpg. Its original bytes, proportions and appearance are preserved. The placeholder has been removed.
-
-PREVIEW
-From the extracted directory, run: python -m http.server 8080
-A hosted preview requires authenticated Netlify access; no deployment was created.
-
-The prior live site has not been overwritten. See README.md for full instructions.
+The exact approved portrait is included unchanged. All fonts and runtime assets are local.
+Netlify authentication was unavailable, so no hosted preview or production deployment was created.
+The existing main branch and live production deployment have not been replaced by this review version.

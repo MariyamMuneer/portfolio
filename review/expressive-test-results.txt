@@ -1,0 +1,45 @@
+PASS all six pages: local links, image alt text, anchors, unique IDs and heading semantics
+PASS real hero animations: staggered lines, portrait entrance, delayed supporting content, completed visible states
+PASS project scroll reveal begins on intersection, animates and ends fully visible
+PASS project hover produces screen movement; title/action transitions retained
+PASS animated case-study navigation and browser Back restore a usable page
+PASS 1440px index.html: no page overflow, images load, playable video metadata
+PASS 1440px move-light.html: no page overflow, images load, playable video metadata
+PASS 1440px nourish-lab.html: no page overflow, images load, playable video metadata
+PASS 1440px msn-academy.html: no page overflow, images load, playable video metadata
+PASS 1440px pickwise.html: no page overflow, images load, playable video metadata
+PASS 1440px velora.html: no page overflow, images load, playable video metadata
+PASS 768px index.html: no page overflow, images load, playable video metadata
+PASS 768px move-light.html: no page overflow, images load, playable video metadata
+PASS 768px nourish-lab.html: no page overflow, images load, playable video metadata
+PASS 768px msn-academy.html: no page overflow, images load, playable video metadata
+PASS 768px pickwise.html: no page overflow, images load, playable video metadata
+PASS 768px velora.html: no page overflow, images load, playable video metadata
+PASS 390px index.html: no page overflow, images load, playable video metadata
+PASS 390px move-light.html: no page overflow, images load, playable video metadata
+PASS 390px nourish-lab.html: no page overflow, images load, playable video metadata
+PASS 390px msn-academy.html: no page overflow, images load, playable video metadata
+PASS 390px pickwise.html: no page overflow, images load, playable video metadata
+PASS 390px velora.html: no page overflow, images load, playable video metadata
+PASS 320px index.html: no page overflow, images load, playable video metadata
+PASS 320px move-light.html: no page overflow, images load, playable video metadata
+PASS 320px nourish-lab.html: no page overflow, images load, playable video metadata
+PASS 320px msn-academy.html: no page overflow, images load, playable video metadata
+PASS 320px pickwise.html: no page overflow, images load, playable video metadata
+PASS 320px velora.html: no page overflow, images load, playable video metadata
+PASS mobile menu: keyboard opening, focus containment, Escape/Close, focus return, links and desktop resize
+PASS keyboard skip navigation and image dialog Escape/focus return
+PASS featured project order and original portrait prominently in hero
+PASS no-JavaScript navigation, content and native research disclosure
+PASS initial and changed reduced-motion preference; menu usable without animation
+PASS no JavaScript errors or local HTTP failures
+PASS node --check site.js and git diff --check
+PASS Prettier checks for HTML, creative.css and site.js
+PASS original JPEG and netlify.toml bytes preserved
+PASS substantive main-content text in all three case studies preserved
+PASS primary text contrast 13.73:1; secondary 5.42:1; accent 6.16:1; secondary on About 4.93:1
+PASS two local WOFF2 fonts: 46,964 bytes total; package SHA-512 integrity verified
+NO framework build/lint scripts exist in this static project
+NOT VERIFIED external reference/demo availability: requests blocked by network proxy
+NOT CREATED hosted Netlify preview: authentication/site configuration unavailable
+NOT CHANGED main branch or production deployment
